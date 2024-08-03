@@ -1,0 +1,26 @@
+.cart-container {
+    max-width: 800px;
+    margin: 80px auto; /* Margin top to avoid header overlap */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

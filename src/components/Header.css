@@ -1,0 +1,82 @@
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.5em;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+    padding-right: 40px;
+  }
+  
+  /* Navigation Links Styling */
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger-menu {
+    display: none; /* Hidden by default */
+    font-size: 1.5em;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      padding-right: 20px;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50px; /* Adjust based on header height */
+      right: 0;
+      background: #007bff;
+      color: #fff;
+      width: 200px; /* Adjust width as needed */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 10px;
+      z-index: 1000;
+      display: none; /* Hide navigation links by default */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show navigation links when active */
+    }
+  
+    .nav-links a {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .nav-links a:last-child {
+      border-bottom: none;
+    }
+  }
+  
